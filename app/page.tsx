@@ -1,103 +1,106 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import React from 'react';
+import type { JSX } from 'react'; 
+import { motion } from 'framer-motion';
+import StarsBackground from '@/components/StarsBackground';
+import ThreePlanet from '@/components/ThreePlanet';
+
+
+export default function Home(): JSX.Element {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="relative flex flex-col items-center justify-center text-center px-6 py-24 min-h-screen bg-gradient-to-br from-[#0b0c1d] to-[#1a1b2f] overflow-hidden text-white font-sans">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+<ThreePlanet />
+
+      <StarsBackground />
+
+      {/* 🌟 Stars */}
+      <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full opacity-60 animate-pulse" />
+      <div className="absolute top-20 right-16 w-1.5 h-1.5 bg-pink-300 rounded-full opacity-70 animate-ping" />
+      <div className="absolute bottom-10 left-1/4 w-3 h-3 bg-purple-400 rounded-full opacity-50 animate-pulse" />
+      <div className="absolute bottom-16 right-1/5 w-2 h-2 bg-rose-300 rounded-full opacity-60 animate-pulse" />
+
+{/* 🪐 Animated Planets */}
+<div className="absolute w-full h-full pointer-events-none z-0">
+  {/* Planet 1 */}
+  <div className="absolute left-20 top-1/4 w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full animate-spin-slow shadow-lg" />
+  
+  {/* Planet 2 */}
+  <div className="absolute right-16 top-1/3 w-8 h-8 bg-gradient-to-br from-rose-300 to-violet-400 rounded-full animate-spin-reverse shadow-md" />
+
+  {/* Planet 3 */}
+  <div className="absolute bottom-10 left-1/2 w-12 h-12 bg-gradient-to-br from-indigo-500 to-fuchsia-400 rounded-full animate-spin-slow shadow-lg" />
+</div>
+
+
+      {/* 💫 Floating blobs */}
+<div className="absolute top-24 left-16 w-32 h-32 bg-gradient-to-br from-pink-500 to-purple-500 opacity-30 rounded-full blur-3xl animate-bounce-slow" />
+<div className="absolute bottom-24 right-16 w-28 h-28 bg-gradient-to-br from-purple-300 to-pink-300 opacity-30 rounded-full blur-2xl animate-bounce-slow" />
+
+{/* 🌠 Shooting star */}
+<div className="absolute top-10 left-1/2 w-1.5 h-1.5 bg-white rounded-full animate-shooting-star opacity-80" />
+
+      {/* 🪐 Orbit ring */}
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        className="absolute w-96 h-96 border border-purple-400/30 rounded-full shadow-[0_0_20px_2px_rgba(192,132,252,0.25)]"
+
+      />
+      {/* 🌙 Name */}
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-6xl font-extrabold bg-gradient-to-r from-rose-400 via-pink-300 to-purple-400 text-transparent bg-clip-text drop-shadow-lg z-10"
+      >
+        Lexi Sierfeld
+      </motion.h1>
+
+      {/* 👩‍🚀 Tagline */}
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 1 }}
+        className="text-lg max-w-2xl text-gray-300 mt-6 z-10"
+      >
+        Math major at UPenn building full-stack and AI-powered tools. Passionate about problem solving,
+        backend systems, and finance tech.
+      </motion.p>
+
+      {/* 🚀 Buttons */}
+      <motion.div
+        className="flex gap-4 flex-wrap justify-center mt-10 z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6, duration: 1 }}
+
+      
+      >
+        {[
+          { label: 'GitHub', href: 'https://github.com/codebylexis', color: 'from-gray-700 to-black' },
+          { label: 'LinkedIn', href: 'https://linkedin.com/in/lexi-sierfeld', color: 'from-purple-500 to-indigo-600' },
+          { label: 'Email Me', href: 'mailto:sierfeld@sas.upenn.edu', color: 'from-pink-500 to-rose-400' },
+          { label: 'View Projects', href: '/projects', color: 'from-yellow-500 to-pink-500' }
+        ].map((btn, i) => (
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            key={i}
+            href={btn.href}
             target="_blank"
-            rel="noopener noreferrer"
+            className={`bg-gradient-to-r ${btn.color} text-white px-6 py-2.5 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform backdrop-blur-md`}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            {btn.label}
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        ))}
+      </motion.div>
+
+      {/* 🌈 Bottom wave transition */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180 z-0">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-32 fill-[#1a1b2f]">
+          <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </main>
   );
 }
