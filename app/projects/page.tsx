@@ -55,11 +55,11 @@ const projects = [
     link: '#',
   },
   {
-    title: 'Java File Compression Tool',
+    title: 'Java Huffman File Compressor',
     description:
-      'A command-line file compressor/decompressor using Huffman encoding.',
-    tech: ['Java', 'IntelliJ', 'Java I/O'],
-    link: '#',
+      'Command-line Java tool that compresses and decompresses files using Huffman encoding with real compression ratio tracking.',
+    tech: ['Java', 'VS Code', 'Java I/O'],
+    link: 'https://github.com/codebylexis/HuffmanCompressor',
   },
 ];
 
@@ -105,6 +105,7 @@ export default function Projects(): JSX.Element {
             <a
               href={project.link}
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold hover:bg-purple-700 transition"
             >
               View on GitHub
@@ -112,7 +113,6 @@ export default function Projects(): JSX.Element {
           </motion.div>
         ))}
       </div>
-
     </main>
   );
 }
