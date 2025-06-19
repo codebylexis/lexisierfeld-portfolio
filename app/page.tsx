@@ -25,9 +25,7 @@ export default function Home(): JSX.Element {
 <div className="absolute w-full h-full pointer-events-none z-0">
   {/* Planet 1 */}
   <div className="absolute left-20 top-1/4 w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full animate-spin-slow shadow-lg" />
-  
-  {/* Planet 2 */}
-  <div className="absolute right-16 top-1/3 w-8 h-8 bg-gradient-to-br from-rose-300 to-violet-400 rounded-full animate-spin-reverse shadow-md" />
+
 
   {/* Planet 3 */}
   <div className="absolute bottom-10 left-1/2 w-12 h-12 bg-gradient-to-br from-indigo-500 to-fuchsia-400 rounded-full animate-spin-slow shadow-lg" />
