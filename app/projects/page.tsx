@@ -48,11 +48,12 @@ const projects = [
     link: '#',
   },
   {
-    title: 'SQL Movie Rental Dashboard',
+    title: 'Movie Rental Analytics Dashboard',
     description:
-      'Analytics dashboard for a mock movie rental business using SQL + Python.',
-    tech: ['SQL', 'Python', 'PostgreSQL', 'Streamlit'],
-    link: '#',
+      'Interactive dashboard to explore business KPIs, customer trends, rental heatmaps, and genre insights for a fictional rental company using Streamlit + MySQL.',
+    tech: ['Python', 'MySQL', 'Streamlit', 'Faker', 'Pandas'],
+    link: 'https://github.com/codebylexis/movie_rental_dashboard',
+    live: 'https://movie-rental-dashboard.streamlit.app/',
   },
   {
     title: 'Java Huffman File Compressor',
@@ -102,17 +103,30 @@ export default function Projects(): JSX.Element {
             <h2 className="text-xl font-bold text-pink-300 mb-2 z-10 relative">{project.title}</h2>
             <p className="text-gray-300 mb-4 z-10 relative">{project.description}</p>
             <p className="text-sm text-purple-200 mb-4">🛠 {project.tech.join(', ')}</p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold hover:bg-purple-700 transition"
-            >
-              View on GitHub
-            </a>
+            <div className="flex gap-2 flex-wrap">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold hover:bg-purple-700 transition"
+              >
+                View on GitHub
+              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-semibold hover:bg-indigo-700 transition"
+                >
+                  Live Demo
+                </a>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>
     </main>
   );
 }
+
