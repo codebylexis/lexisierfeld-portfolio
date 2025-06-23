@@ -2,7 +2,11 @@ import { getPostBySlug } from '@/lib/mdx';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { notFound } from 'next/navigation';
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   try {
     const post = await getPostBySlug(params.slug);
 
@@ -16,6 +20,6 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       </main>
     );
   } catch {
-    notFound(); // Show 404 if post not found
+    notFound();
   }
 }
