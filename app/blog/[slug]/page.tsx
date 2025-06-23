@@ -21,7 +21,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
         </article>
       </main>
     );
-  } catch (err) {
+  } catch {
     notFound(); // If file not found or error in reading, show 404 page
   }
 }
