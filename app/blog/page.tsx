@@ -18,13 +18,14 @@ export default function Blog() {
 
       {/* 🚀 Blog Title */}
       <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-pink-300 via-purple-400 to-indigo-400 text-transparent bg-clip-text"
-      >
-        From My Keyboard
-      </motion.h1>
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="text-4xl md:text-5xl leading-tight font-extrabold text-center mb-12 bg-gradient-to-r from-pink-300 via-purple-400 to-indigo-400 text-transparent bg-clip-text"
+>
+  From My Keyboard
+</motion.h1>
+
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 relative z-10">
         {/* Blog Post: I Taught a Neural Network to Write Poetry */}
