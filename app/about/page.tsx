@@ -34,37 +34,18 @@ export default function About() {
         className="max-w-3xl mx-auto bg-white/10 border border-white/20 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative z-10"
       >
         <p className="mb-4 text-lg text-gray-200">
-          Hi! I&apos;m <span className="text-pink-300 font-semibold">Lexi Sierfeld</span>, a Math major at <span className="text-purple-300">UPenn</span> who loves building
-          AI-powered tools and backend systems that scale.
+          I wasn’t always headed for software. I started out pre-med (yes, a pre-med math major), but I kept getting pulled toward the logic puzzles in my math classes — proofs, abstract structures, problems that made me <em>think hard</em>. I realized I love solving problems more than memorizing them.
         </p>
         <p className="mb-4 text-gray-300">
-          I transitioned into SWE because I&apos;m obsessed with clean logic, elegant problem-solving, and making things <em>work like magic</em>. I&apos;ve placed in the <span className="text-indigo-300 font-medium">Putnam Competition</span>, and I love blending theory with tech.
+          Now I’m minoring in <span className="text-purple-300">Computer Science</span>, and I build things that let me blend my math brain with code — backend systems, full-stack tools, and AI-powered experiments. I still get excited by a good proof, but I also love writing clean APIs and debugging for way too long just to get something elegant to work.
         </p>
         <p className="mb-4 text-gray-300">
-          My current focus: full-stack dev, backend infra, and fintech tools that actually feel intelligent.
+          My focus today is building tools that are logical, fast, and maybe a little magical — the kind that feel like they <em>should</em> exist.
+        </p>
+        <p className="mt-6 text-gray-300">
+          Outside of code, I’m on the <span className="text-pink-300 font-medium">Penn cheerleading team</span>, and I surf <em>year-round</em> on the Jersey Shore (yes, even in winter). I love discovering new countries, writing poetry, going hiking, and I’ve recently started getting into running — still chasing that runner’s high.
         </p>
       </motion.div>
-
-      {/* ✨ Constellation-style fun facts */}
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto z-10 relative">
-        {[
-          '📣 Cheerleader',
-          '🏄‍♀️ Surfer',
-          '✈️ Traveler',
-        ].map((fact, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 * i, duration: 0.6 }}
-            className="relative bg-white/10 border border-white/20 rounded-xl p-4 backdrop-blur-md text-center text-pink-200 text-sm font-medium"
-          >
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-white rounded-full" />
-            {fact}
-          </motion.div>
-        ))}
-      </div>
 
       {/* 🌠 connecting constellation lines */}
       <svg className="absolute w-full h-full top-0 left-0 pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
