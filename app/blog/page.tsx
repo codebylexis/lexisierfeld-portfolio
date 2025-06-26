@@ -14,12 +14,12 @@ export default function Blog() {
             <h2 className="text-xl font-semibold text-pink-200 mb-2">
               The Strange Joy of Inspecting Random Websites
             </h2>
-            <p className="text-sm text-purple-300 mb-1">🗓️ June 28, 2025</p>
+            <p className="text-sm text-purple-300 mb-1">🗓️ June 23, 2025</p>
             <p className="text-gray-300 mb-4">
               A small habit that makes me weirdly happy.
             </p>
             <Link
-              href="/blog/fifth-post"
+              href="/blog/second-post"
               className="inline-block bg-pink-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-pink-600 transition"
             >
               Read Post
@@ -31,7 +31,7 @@ export default function Blog() {
             <h2 className="text-xl font-semibold text-pink-200 mb-2">
               I Built My Blog Without Slugs, MDX, or Headaches
             </h2>
-            <p className="text-sm text-purple-300 mb-1">🗓️ June 25, 2025</p>
+            <p className="text-sm text-purple-300 mb-1">🗓️ June 17, 2025</p>
             <p className="text-gray-300 mb-4">
               Simplifying my blog setup in Next.js 15 — no slugs, no MDX, just working.
             </p>
@@ -42,6 +42,15 @@ export default function Blog() {
               Read Post
             </Link>
           </div>
+
+          <li className="bg-white/10 p-6 rounded-xl">
+  <Link href="/blog/third-post" className="text-pink-200 text-2xl font-semibold">
+    I Taught a Neural Network to Write Poetry
+  </Link>
+  <p className="text-purple-300 text-sm">June 29, 2025</p>
+  <p className="text-gray-300">When a poet trains a machine to write like one.</p>
+</li>
+
         </div>
       </div>
     </main>
