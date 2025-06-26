@@ -45,6 +45,9 @@ export default function About() {
         <p className="mt-6 text-gray-300">
           Outside of code, I’m on the <span className="text-pink-300 font-medium">Penn cheerleading team</span>, and I surf <em>year-round</em> on the Jersey Shore (yes, even in winter). I love discovering new countries, writing poetry, going hiking, and I’ve recently started getting into running — still chasing that runner’s high.
         </p>
+        <p className="mt-6 text-gray-400 italic">
+  Always open to connecting — reach out if you want to chat or collaborate.
+</p>
       </motion.div>
 
       {/* 🌠 connecting constellation lines */}
