@@ -50,7 +50,7 @@ export default function Blog() {
           <h2 className="text-xl font-semibold text-pink-200 mb-2">
             The Strange Joy of Inspecting Random Websites
           </h2>
-          <p className="text-sm text-purple-300 mb-1">🗓️ June 23, 2025</p>
+          <p className="text-sm text-purple-300 mb-1">🗓️ June 22, 2025</p>
           <p className="text-gray-300 mb-4">
             A small habit that makes me weirdly happy.
           </p>
