@@ -14,46 +14,18 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'Full-Stack Stock Portfolio Tracker',
+    title: 'Mini Unix Shell in C',
     description:
-      'Track stock performance with real-time data, user auth, and visualizations.',
-    tech: ['Python', 'JavaScript', 'React', 'Tailwind', 'FastAPI', 'MongoDB'],
-    link: '#',
+      'A basic Unix-like shell built from scratch in C with job control, piping, redirection, and signal handling.',
+    tech: ['C', 'POSIX', 'Readline', 'Signals', 'Linux'],
+    link: 'https://github.com/codebylexis/mini-shell', // update if different
   },
   {
-    title: 'Coding Interview Tracker Tool',
+    title: 'Java Huffman File Compressor',
     description:
-      'Track Leetcode progress, filter by topic, and visualize your performance.',
-    tech: ['TypeScript', 'Next.js', 'Tailwind', 'Firebase'],
-    link: '#',
-  },
-  {
-    title: 'AI Voice Synthesizer',
-    description:
-      'Generate synthesized speech using Hugging Face / OpenAI APIs.',
-    tech: ['Python', 'Flask', 'React', 'Hugging Face', 'OpenAI'],
-    link: '#',
-  },
-  {
-    title: 'Reddit Sentiment Analyzer',
-    description:
-      'Analyze sentiment of Reddit posts by topic or ticker with NLP tools.',
-    tech: ['Python', 'PRAW', 'VADER', 'NLTK', 'Streamlit'],
-    link: '#',
-  },
-  {
-    title: 'Uber ETA Estimator Clone',
-    description:
-      'Simulates Uber-style ETA predictions using map APIs and backend logic.',
-    tech: ['Python', 'Flask', 'OpenStreetMap', 'React'],
-    link: '#',
-  },
-  {
-    title: 'Blog Engine with Markdown Support',
-    description:
-      'A minimal blog platform with post creation, Markdown rendering, and auth.',
-    tech: ['JavaScript', 'Next.js', 'Node.js', 'Express', 'PostgreSQL'],
-    link: '#',
+      'Command-line Java tool that compresses and decompresses files using Huffman encoding with real compression ratio tracking.',
+    tech: ['Java', 'VS Code', 'Java I/O'],
+    link: 'https://github.com/codebylexis/HuffmanCompressor',
   },
   {
     title: 'ReelTime Rentals – Analytics Dashboard',
@@ -62,13 +34,6 @@ const projects: Project[] = [
     tech: ['Python', 'PostgreSQL', 'Streamlit', 'Faker', 'Pandas'],
     link: 'https://github.com/codebylexis/movie_rental_dashboard',
     live: 'https://reeltime-rentals-2024-analytics.streamlit.app/',
-  },
-  {
-    title: 'Java Huffman File Compressor',
-    description:
-      'Command-line Java tool that compresses and decompresses files using Huffman encoding with real compression ratio tracking.',
-    tech: ['Java', 'VS Code', 'Java I/O'],
-    link: 'https://github.com/codebylexis/HuffmanCompressor',
   },
 ];
 
