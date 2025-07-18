@@ -9,7 +9,7 @@ export default function FifthPost() {
       <h1 className="text-4xl font-bold mb-2">
         The Strange Joy of Inspecting Random Websites for No Reason
       </h1>
-      <p className="text-sm text-purple-300 mb-6">June 28, 2025</p>
+      <p className="text-sm text-purple-300 mb-6">June 23, 2025</p>
       <article className="prose prose-invert">
         <p>
           Sometimes I’ll be scrolling on a restaurant site or an artist’s portfolio and think,

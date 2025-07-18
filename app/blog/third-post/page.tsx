@@ -9,7 +9,7 @@ export default function ThirdPost() {
       <h1 className="text-4xl font-bold mb-2">
         I Taught a Neural Network to Write Poetry (Because I Already Do)
       </h1>
-      <p className="text-sm text-purple-300 mb-6">June 29, 2025</p>
+      <p className="text-sm text-purple-300 mb-6">June 26, 2025</p>
       <article className="prose prose-invert">
         <p>
           Before I ever wrote code, I wrote poetry. It’s always been my way of sorting out the

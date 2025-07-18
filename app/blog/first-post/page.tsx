@@ -7,7 +7,7 @@ export default function FirstPost() {
         ← Back
       </button>
       <h1 className="text-4xl font-bold mb-2">I Built My Blog Without Slugs, MDX, or Headaches</h1>
-      <p className="text-sm text-purple-300 mb-6">June 25, 2025</p>
+      <p className="text-sm text-purple-300 mb-6">June 17, 2025</p>
       <article className="prose prose-invert">
         <p>
           So I built this blog section of my portfolio recently, and I just want to say: dynamic
