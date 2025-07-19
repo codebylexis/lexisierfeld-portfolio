@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       'A basic Unix-like shell built from scratch in C with job control, piping, redirection, and signal handling.',
     tech: ['C', 'POSIX', 'Readline', 'Signals', 'Linux'],
-    link: 'https://github.com/codebylexis/mini-shell', // update if different
+    link: 'https://github.com/codebylexis/mini-shell',
   },
   {
     title: 'Java Huffman File Compressor',
@@ -34,6 +34,13 @@ const projects: Project[] = [
     tech: ['Python', 'PostgreSQL', 'Streamlit', 'Faker', 'Pandas'],
     link: 'https://github.com/codebylexis/movie_rental_dashboard',
     live: 'https://reeltime-rentals-2024-analytics.streamlit.app/',
+  },
+  {
+    title: 'Sprig: Toy Programming Language',
+    description:
+      'A simple interpreted language with a Python backend and a React frontend for visualizing abstract syntax trees (ASTs) in real-time.',
+    tech: ['Python', 'React', 'FastAPI', 'Framer Motion'],
+    link: 'https://github.com/codebylexis/Sprig',
   },
 ];
 
