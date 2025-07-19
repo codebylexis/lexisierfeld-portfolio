@@ -9,10 +9,32 @@ type Project = {
   description: string;
   tech: string[];
   link: string;
-  live?: string; // optional live demo
+  live?: string;
 };
 
 const projects: Project[] = [
+  {
+    title: 'AI Image Caption Generator',
+    description:
+      'A full-stack app that generates captions for uploaded images using BLIP-2 (Flan-T5-XL) and ViT-GPT2 models with a Flask backend and a React frontend.',
+    tech: ['Python', 'React', 'Flask', 'Transformers', 'PyTorch'],
+    link: 'https://github.com/codebylexis/ai-image-caption-generator',
+  },
+  {
+    title: 'Sprig: Toy Programming Language',
+    description:
+      'A simple interpreted language with a Python backend and a React frontend for visualizing abstract syntax trees (ASTs) in real-time.',
+    tech: ['Python', 'React', 'FastAPI', 'Framer Motion'],
+    link: 'https://github.com/codebylexis/Sprig',
+  },
+  {
+    title: 'ReelTime Rentals – Analytics Dashboard',
+    description:
+      'A KPI dashboard for a fictional movie rental company using PostgreSQL, Streamlit, and Python to visualize performance in 2024.',
+    tech: ['Python', 'PostgreSQL', 'Streamlit', 'Faker', 'Pandas'],
+    link: 'https://github.com/codebylexis/movie_rental_dashboard',
+    live: 'https://reeltime-rentals-2024-analytics.streamlit.app/',
+  },
   {
     title: 'Mini Unix Shell in C',
     description:
@@ -26,21 +48,6 @@ const projects: Project[] = [
       'Command-line Java tool that compresses and decompresses files using Huffman encoding with real compression ratio tracking.',
     tech: ['Java', 'VS Code', 'Java I/O'],
     link: 'https://github.com/codebylexis/HuffmanCompressor',
-  },
-  {
-    title: 'ReelTime Rentals – Analytics Dashboard',
-    description:
-      'A KPI dashboard for a fictional movie rental company using PostgreSQL, Streamlit, and Python to visualize performance in 2024.',
-    tech: ['Python', 'PostgreSQL', 'Streamlit', 'Faker', 'Pandas'],
-    link: 'https://github.com/codebylexis/movie_rental_dashboard',
-    live: 'https://reeltime-rentals-2024-analytics.streamlit.app/',
-  },
-  {
-    title: 'Sprig: Toy Programming Language',
-    description:
-      'A simple interpreted language with a Python backend and a React frontend for visualizing abstract syntax trees (ASTs) in real-time.',
-    tech: ['Python', 'React', 'FastAPI', 'Framer Motion'],
-    link: 'https://github.com/codebylexis/Sprig',
   },
 ];
 
