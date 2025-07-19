@@ -5,7 +5,6 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 export default function NavBar() {
   return (
     <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50 border-b border-gray-200">
-      <div className="text-2xl font-extrabold text-purple-700">Lexi Sierfeld</div>
       <div className="flex gap-6 items-center text-sm text-gray-700 font-medium">
         <Link href="/">Home</Link>
         <Link href="/projects">Projects</Link>
