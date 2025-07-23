@@ -86,12 +86,6 @@ export default function Home(): JSX.Element {
         ))}
       </motion.div>
 
-      {/* 🌈 Bottom wave transition */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180 z-0">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-32 fill-[#1a1b2f]">
-          <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z"></path>
-        </svg>
-      </div>
     </main>
   );
 }
