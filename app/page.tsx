@@ -57,7 +57,7 @@ export default function Home(): JSX.Element {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 1 }}
-        className="text-base max-w-[400px] leading-snug text-gray-300 mt-6 z-10 mx-auto"
+        className="text-base max-w-[600px] leading-snug text-gray-300 mt-6 z-10 mx-auto"
       >
         Math major at the University of Pennsylvania interested in algorithms, problem solving, and building full-stack and AI projects. Currently developing skills in backend development and software engineering.
       </motion.p>
