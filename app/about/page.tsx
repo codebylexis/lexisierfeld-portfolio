@@ -38,10 +38,10 @@ export default function About() {
           I’m a Math major at the University of Pennsylvania with a growing passion for coding and problem solving. Originally on a pre-med track, I discovered I love the logic and creativity in math and programming more than memorization.
         </p>
         <p className="mb-4 text-lg leading-relaxed text-gray-300">
-          Now, I’m minoring in <span className="text-purple-300">Computer Science</span> and enjoy building full-stack apps, backend systems, and AI-powered projects that combine math and code.
+          Now, I’m minoring in Computer Science and enjoy building full-stack apps, backend systems, and AI-powered projects that combine math and code.
         </p>
         <p className="mb-4 text-lg leading-relaxed text-gray-300">
-          Outside of coding, I’m on the <span className="text-pink-300 font-medium">Penn cheerleading team</span>, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and running.
+          Outside of coding, I’m on the Penn cheerleading team, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and running.
         </p>
 
         {/* Skills Section */}
