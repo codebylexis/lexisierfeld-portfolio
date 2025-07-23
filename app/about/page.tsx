@@ -33,15 +33,28 @@ export default function About() {
         transition={{ delay: 0.3, duration: 0.8 }}
         className="max-w-3xl mx-auto bg-white/10 border border-white/20 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative z-10"
       >
-        <p className="mb-4 text-lg text-gray-200">
+        {/* Use consistent font size and line height for all paragraphs */}
+        <p className="mb-4 text-lg leading-relaxed text-gray-200">
           I’m a Math major at the University of Pennsylvania with a growing passion for coding and problem solving. Originally on a pre-med track, I discovered I love the logic and creativity in math and programming more than memorization.
         </p>
-        <p className="mb-4 text-gray-300">
+        <p className="mb-4 text-lg leading-relaxed text-gray-300">
           Now, I’m minoring in <span className="text-purple-300">Computer Science</span> and enjoy building full-stack apps, backend systems, and AI-powered projects that combine math and code.
         </p>
-        <p className="mb-4 text-gray-300">
+        <p className="mb-4 text-lg leading-relaxed text-gray-300">
           Outside of coding, I’m on the <span className="text-pink-300 font-medium">Penn cheerleading team</span>, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and running.
         </p>
+
+        {/* Skills Section */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold text-purple-300 mb-4">Skills</h2>
+          <ul className="text-gray-300 list-disc list-inside space-y-1 text-lg leading-relaxed">
+            <li><strong>Programming Languages:</strong> Python, Java, C, OCaml, JavaScript, SQL</li>
+            <li><strong>Frameworks & Libraries:</strong> Flask, React, FastAPI, Streamlit, Transformers, PyTorch</li>
+            <li><strong>Databases:</strong> PostgreSQL</li>
+            <li><strong>Tools & Technologies:</strong> Git, VS Code, Linux, REST APIs, Framer Motion</li>
+          </ul>
+        </div>
+
         <p className="mt-6 text-gray-400 italic">
           Always open to connecting — reach out if you want to chat or collaborate.
         </p>
