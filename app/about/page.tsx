@@ -34,20 +34,17 @@ export default function About() {
         className="max-w-3xl mx-auto bg-white/10 border border-white/20 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative z-10"
       >
         <p className="mb-4 text-lg text-gray-200">
-          I wasn’t always headed for software. I started out pre-med (yes, a pre-med math major), but I kept getting pulled toward the logic puzzles in my math classes — proofs, abstract structures, problems that made me <em>think hard</em>. I realized I love solving problems more than memorizing them.
+          I’m a Math major at the University of Pennsylvania with a growing passion for coding and problem solving. Originally on a pre-med track, I discovered I love the logic and creativity in math and programming more than memorization.
         </p>
         <p className="mb-4 text-gray-300">
-          Now I’m minoring in <span className="text-purple-300">Computer Science</span>, and I build things that let me blend my math brain with code — backend systems, full-stack tools, and AI-powered experiments. I still get excited by a good proof, but I also love writing clean APIs and debugging for way too long just to get something elegant to work.
+          Now, I’m minoring in <span className="text-purple-300">Computer Science</span> and enjoy building full-stack apps, backend systems, and AI-powered projects that combine math and code.
         </p>
         <p className="mb-4 text-gray-300">
-          My focus today is building tools that are logical, fast, and maybe a little magical — the kind that feel like they <em>should</em> exist.
-        </p>
-        <p className="mt-6 text-gray-300">
-          Outside of code, I’m on the <span className="text-pink-300 font-medium">Penn cheerleading team</span>, and I surf <em>year-round</em> on the Jersey Shore (yes, even in winter). I love discovering new countries, writing poetry, going hiking, and I’ve recently started getting into running — still chasing that runner’s high.
+          Outside of coding, I’m on the <span className="text-pink-300 font-medium">Penn cheerleading team</span>, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and running.
         </p>
         <p className="mt-6 text-gray-400 italic">
-  Always open to connecting — reach out if you want to chat or collaborate.
-</p>
+          Always open to connecting — reach out if you want to chat or collaborate.
+        </p>
       </motion.div>
 
       {/* 🌠 connecting constellation lines */}
