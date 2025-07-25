@@ -38,9 +38,6 @@ export default function About() {
           I’m a Math major and CS minor at the University of Pennsylvania. I originally started on the pre-med track, but discovered I love the logic and creativity of programming far more than memorization.
         </p>
         <p className="mb-4 text-base leading-relaxed text-gray-300">
-          Now, I’m minoring in Computer Science and am interested in full-stack applications, backend systems, and ML & DL systems that apply to the real world.
-        </p>
-        <p className="mb-4 text-base leading-relaxed text-gray-300">
           Outside of coding, I’m on the Penn cheerleading team, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and traveling.
         </p>
 
