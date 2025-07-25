@@ -14,6 +14,13 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: 'MarketInsightAI: Stock Price Prediction',
+    description:
+      'A deep learning project using CNNs and NLP to predict stock movements from the top 20 financial news headlines. Features performance graphs, word clouds, and model interpretability.',
+    tech: ['Python', 'TensorFlow', 'Keras', 'NLP', 'SpaCy', 'Jupyter Notebook'],
+    link: 'https://github.com/codebylexis/stock-news-price-prediction',
+  },
+  {
     title: 'AI Image Caption Generator',
     description:
       'A full-stack app that generates captions for uploaded images using BLIP-2 (Flan-T5-XL) and ViT-GPT2 models with a Flask backend and a React frontend.',

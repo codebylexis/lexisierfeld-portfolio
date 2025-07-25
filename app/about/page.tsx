@@ -35,13 +35,13 @@ export default function About() {
       >
         {/* Slightly smaller font for about paragraphs */}
         <p className="mb-4 text-base leading-relaxed text-gray-200">
-          I’m a Math major at the University of Pennsylvania with a growing passion for coding and problem solving. Originally on a pre-med track, I discovered I love the logic and creativity in math and programming more than memorization.
+          I’m a Math major and CS minor at the University of Pennsylvania. I originally started on the pre-med track, but discovered I love the logic and creativity of programming far more than memorization.
         </p>
         <p className="mb-4 text-base leading-relaxed text-gray-300">
-          Now, I’m minoring in Computer Science and enjoy building full-stack apps, backend systems, and AI-powered projects that combine math and code.
+          Now, I’m minoring in Computer Science and am interested in full-stack applications, backend systems, and ML & DL systems that apply to the real world.
         </p>
         <p className="mb-4 text-base leading-relaxed text-gray-300">
-          Outside of coding, I’m on the Penn cheerleading team, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and running.
+          Outside of coding, I’m on the Penn cheerleading team, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and traveling.
         </p>
 
         {/* Skills Section - keep original font size */}
@@ -49,9 +49,9 @@ export default function About() {
           <h2 className="text-2xl font-semibold text-purple-300 mb-4">Skills</h2>
           <ul className="text-gray-300 list-disc list-inside space-y-1 text-lg leading-relaxed">
             <li><strong>Programming Languages:</strong> Python, Java, C, OCaml, JavaScript, SQL</li>
-            <li><strong>Frameworks & Libraries:</strong> Flask, React, FastAPI, Streamlit, Transformers, PyTorch</li>
+            <li><strong>Frameworks & Libraries:</strong> Flask, React, FastAPI, Streamlit, Transformers, PyTorch, TensorFlow, Keras, SpaCy, Seaborn, Scikit-learn</li>
             <li><strong>Databases:</strong> PostgreSQL</li>
-            <li><strong>Tools & Technologies:</strong> Git, VS Code, Linux, REST APIs, Framer Motion</li>
+            <li><strong>Tools & Technologies:</strong> Git, VS Code, Linux, REST APIs, Framer Motion, Jupyter Notebook, IntelliJ</li>
           </ul>
         </div>
 
