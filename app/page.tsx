@@ -59,7 +59,7 @@ export default function Home(): JSX.Element {
         transition={{ delay: 0.3, duration: 1 }}
         className="text-base max-w-[600px] leading-snug text-gray-300 mt-6 z-10 mx-auto"
       >
-        Math major at the University of Pennsylvania interested in algorithms, problem solving, and building full-stack and AI projects. Currently developing skills in backend development and software engineering.
+        Math major at the University of Pennsylvania interested in algorithms, full-stack and backend systems, and applied ML/NLP. Currently developing skills in backend development and software engineering.
       </motion.p>
 
       {/* 🚀 Buttons */}
