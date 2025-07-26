@@ -21,6 +21,13 @@ const projects: Project[] = [
     link: 'https://github.com/codebylexis/stock-news-price-prediction',
   },
   {
+    title: 'Kalman Tracker: 2D Physics + Filtering',
+    description:
+      'A real-time Kalman filter system that tracks a simulated projectile using noisy sensor data. Includes a full physics engine, animated tracking, velocity estimation, Streamlit dashboard, and CSV export.',
+    tech: ['Python', 'Kalman Filter', 'Matplotlib', 'Streamlit', 'NumPy'],
+    link: 'https://github.com/codebylexis/kalman-tracker',
+  },
+  {
     title: 'AI Image Caption Generator',
     description:
       'A full-stack app that generates captions for uploaded images using BLIP-2 (Flan-T5-XL) and ViT-GPT2 models with a Flask backend and a React frontend.',
