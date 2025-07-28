@@ -14,6 +14,13 @@ type Project = {
 
 const projects: Project[] = [
   {
+  title: 'BCanDetect: Breast Cancer Classifier',
+  description:
+    'A deep learning model that classifies breast cancer from histopathological images using a CNN + ANN hybrid architecture. Achieves 90% accuracy and includes training visualizations, evaluation metrics, and a clean Jupyter Notebook implementation.',
+  tech: ['Python', 'TensorFlow', 'Keras', 'CNN', 'ANN', 'Jupyter Notebook'],
+  link: 'https://github.com/codebylexis/BCanDetect',
+  },
+  {
     title: 'MarketInsightAI: Stock Price Prediction',
     description:
       'A deep learning project using CNNs and NLP to predict stock movements from the top 20 financial news headlines. Features performance graphs, word clouds, and model interpretability.',
