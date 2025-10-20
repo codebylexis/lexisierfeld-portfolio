@@ -2,15 +2,20 @@
 
 export default function FifthPost() {
   return (
-    <main className="min-h-screen bg-[#0b0c1d] text-white px-6 py-24">
-      <button onClick={() => history.back()} className="mb-6 text-pink-300 underline">
+    <main className="min-h-screen bg-gradient-to-b from-[#0b0c1d] to-[#0f1222] text-white px-6 py-24 font-sans">
+      <button
+        onClick={() => history.back()}
+        className="mb-6 text-cyan-300 underline hover:text-cyan-200 transition-colors"
+      >
         ← Back
       </button>
-      <h1 className="text-4xl font-bold mb-2">
+
+      <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-cyan-300 via-cyan-200 to-indigo-300 text-transparent bg-clip-text">
         The Strange Joy of Inspecting Random Websites for No Reason
       </h1>
-      <p className="text-sm text-purple-300 mb-6">June 22, 2025</p>
-      <article className="prose prose-invert">
+      <p className="text-sm text-slate-400 mb-6">June 22, 2025</p>
+
+      <article className="prose prose-invert max-w-3xl mx-auto text-slate-200 leading-relaxed">
         <p>
           Sometimes I’ll be scrolling on a restaurant site or an artist’s portfolio and think,
           “wait… how’d they do that?” And next thing I know, I’ve got dev tools open and I’m

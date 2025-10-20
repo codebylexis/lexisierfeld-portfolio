@@ -2,15 +2,20 @@
 
 export default function TheEmotionsOfMoney() {
   return (
-    <main className="min-h-screen bg-[#0b0c1d] text-white px-6 py-24">
-      <button onClick={() => history.back()} className="mb-6 text-pink-300 underline">
+    <main className="min-h-screen bg-gradient-to-b from-[#0b0c1d] to-[#0f1222] text-white px-6 py-24 font-sans">
+      <button
+        onClick={() => history.back()}
+        className="mb-6 text-cyan-300 underline hover:text-cyan-200 transition-colors"
+      >
         ← Back
       </button>
 
-      <h1 className="text-4xl font-bold mb-2">The Emotions of Money</h1>
-      <p className="text-sm text-purple-300 mb-6">October 12, 2025</p>
+      <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-cyan-300 via-cyan-200 to-indigo-300 text-transparent bg-clip-text">
+        The Emotions of Money
+      </h1>
+      <p className="text-sm text-slate-400 mb-6">October 12, 2025</p>
 
-      <article className="prose prose-invert">
+      <article className="prose prose-invert max-w-3xl mx-auto text-slate-200 leading-relaxed">
         <p>
           I used to think money was logical — just numbers moving from one account to another. But
           the more I watch markets, read financial headlines, or even just check my bank app, the

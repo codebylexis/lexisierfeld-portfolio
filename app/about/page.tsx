@@ -9,61 +9,153 @@ export default function About() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="relative min-h-screen bg-gradient-to-br from-[#0b0c1d] to-[#1a1b2f] text-white px-6 py-24 overflow-hidden font-sans"
+      className="relative min-h-screen bg-gradient-to-b from-[#0b0c1d] to-[#0f1222] text-white px-6 py-24 overflow-hidden font-sans"
     >
-      {/* 🌌 Animated pastel planets */}
-      <div className="absolute top-16 left-12 w-24 h-24 bg-pink-400 rounded-full blur-2xl opacity-30 animate-ping" />
-      <div className="absolute bottom-24 right-10 w-20 h-20 bg-purple-500 rounded-full blur-2xl opacity-30 animate-pulse" />
-      <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-indigo-400 rounded-full blur-xl opacity-30 animate-pulse" />
+      {/* ✨ Subtle ambient orbs (cyan/indigo theme) */}
+      <div className="absolute top-16 left-12 w-24 h-24 bg-cyan-400 rounded-full blur-2xl opacity-20" />
+      <div className="absolute bottom-24 right-10 w-20 h-20 bg-indigo-500 rounded-full blur-2xl opacity-20" />
+      <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-cyan-300 rounded-full blur-xl opacity-20" />
 
       {/* ✨ Header */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-5xl font-extrabold text-center mb-10 bg-gradient-to-r from-pink-300 via-purple-400 to-indigo-400 text-transparent bg-clip-text"
+        className="text-5xl font-extrabold text-center mb-10 bg-gradient-to-r from-cyan-300 via-cyan-200 to-indigo-300 text-transparent bg-clip-text"
       >
         👩‍🚀 About Me
       </motion.h1>
 
-      {/* 🌌 About card */}
+      {/* 🪪 About card */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        className="max-w-3xl mx-auto bg-white/10 border border-white/20 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative z-10"
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="max-w-3xl mx-auto bg-white/[0.06] border border-cyan-300/20 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative z-10"
       >
-        {/* Slightly smaller font for about paragraphs */}
-        <p className="mb-4 text-base leading-relaxed text-gray-200">
-          I’m a Math major and CS minor at the University of Pennsylvania. I originally started on the pre-med track, but discovered I love the logic and creativity of programming far more than memorization.
-        </p>
-        <p className="mb-4 text-base leading-relaxed text-gray-300">
-          Outside of coding, I’m on the Penn cheerleading team, surf year-round on the Jersey Shore (yes, even in winter), and love hiking, writing poetry, and traveling.
-        </p>
-
-        {/* Skills Section - keep original font size */}
-        <div className="mt-8">
-          <h2 className="text-2xl font-semibold text-purple-300 mb-4">Skills</h2>
-          <ul className="text-gray-300 list-disc list-inside space-y-1 text-lg leading-relaxed">
-            <li><strong>Programming Languages:</strong> Python, Java, C, OCaml, JavaScript, SQL</li>
-            <li><strong>Frameworks & Libraries:</strong> Flask, React, FastAPI, Streamlit, Transformers, PyTorch, TensorFlow, Keras, SpaCy, Seaborn, Scikit-learn</li>
-            <li><strong>Databases:</strong> PostgreSQL</li>
-            <li><strong>Tools & Technologies:</strong> Git, VS Code, Linux, REST APIs, Framer Motion, Jupyter Notebook, IntelliJ</li>
-          </ul>
+        {/* New, concise technical bio */}
+        <div className="space-y-4 text-slate-200 leading-relaxed">
+          <p>
+            I’m a Math major and Computer Science minor at the University of Pennsylvania, where I
+            explore the intersection of algorithms, design, and data.
+          </p>
+          <p>
+            I’m currently the <span className="font-semibold">Lead Engineer at Green Optic Films</span>, developing a
+            medical video analysis platform that applies <span className="font-semibold">computer vision</span> and{' '}
+            <span className="font-semibold">machine learning</span> to streamline surgical instrument tracking and
+            documentation.
+          </p>
+          <p>
+            Built with <span className="font-semibold">Python, PySide, and VLC bindings</span>, the system uses a{' '}
+            <span className="font-semibold">modular architecture</span> for multi-source video playback, annotation, and
+            data synchronization.
+          </p>
+          <p>
+            Green Optic Films produces data-driven medical content, and I focus on building the tools that make that
+            data meaningful for clinical insight and device training.
+          </p>
+          <p>Outside of work, I surf, write, and am a member of the Penn Cheerleading Team.</p>
         </div>
 
-        <p className="mt-6 text-gray-400 italic">
-          Always open to connecting — reach out if you want to chat or collaborate.
-        </p>
+        {/* 🧠 Skills (compact, not text-dense) */}
+        <div className="mt-10">
+          <h2 className="text-2xl font-semibold text-cyan-200 mb-4">Skills</h2>
+
+          {/* Category rows */}
+          <div className="space-y-4 text-slate-300">
+            <div>
+              <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Languages</div>
+              <div className="flex flex-wrap gap-2">
+                {['Python', 'Java', 'C', 'OCaml', 'JavaScript', 'SQL'].map((s) => (
+                  <span
+                    key={s}
+                    className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Frameworks & Libraries</div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'Flask',
+                  'React',
+                  'FastAPI',
+                  'Streamlit',
+                  'Transformers',
+                  'PyTorch',
+                  'TensorFlow',
+                  'Keras',
+                  'SpaCy',
+                  'Seaborn',
+                  'Scikit-learn',
+                ].map((s) => (
+                  <span
+                    key={s}
+                    className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Databases</div>
+                <div className="flex flex-wrap gap-2">
+                  {['PostgreSQL'].map((s) => (
+                    <span
+                      key={s}
+                      className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Tools & Tech</div>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    'Git',
+                    'VS Code',
+                    'Linux',
+                    'REST APIs',
+                    'Framer Motion',
+                    'Jupyter Notebook',
+                    'IntelliJ',
+                  ].map((s) => (
+                    <span
+                      key={s}
+                      className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-8 text-slate-400 italic">Always open to connecting — happy to chat or collaborate.</p>
       </motion.div>
 
-      {/* 🌠 connecting constellation lines */}
-      <svg className="absolute w-full h-full top-0 left-0 pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
-        <line x1="25%" y1="70%" x2="50%" y2="75%" stroke="#f9a8d4" strokeWidth="0.5" strokeDasharray="4 4" />
-        <line x1="50%" y1="75%" x2="75%" y2="70%" stroke="#c084fc" strokeWidth="0.5" strokeDasharray="4 4" />
+      {/* 🌌 Constellation accents (cyan/indigo) */}
+      <svg
+        className="absolute w-full h-full top-0 left-0 pointer-events-none z-0"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1="25%" y1="70%" x2="50%" y2="75%" stroke="#67e8f9" strokeWidth="0.5" strokeDasharray="4 4" />
+        <line x1="50%" y1="75%" x2="75%" y2="70%" stroke="#818cf8" strokeWidth="0.5" strokeDasharray="4 4" />
       </svg>
 
-      {/* 🪐 Two orbit photos */}
+      {/* 🖼️ Photos */}
       <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto relative z-10">
         {[
           { src: '/cheer.jpg', alt: 'Mid-air cheerleading flip' },
@@ -71,11 +163,11 @@ export default function About() {
         ].map((img, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 30, scale: 0.9 }}
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ delay: i * 0.2, duration: 0.6 }}
+            transition={{ delay: i * 0.15, duration: 0.5 }}
             viewport={{ once: true }}
-            className="rounded-full overflow-hidden w-64 h-64 border-4 border-pink-400 shadow-xl mx-auto hover:scale-105 transition-transform"
+            className="rounded-full overflow-hidden w-64 h-64 border-4 border-cyan-300/40 shadow-xl mx-auto hover:scale-105 transition-transform"
           >
             <Image
               src={img.src}

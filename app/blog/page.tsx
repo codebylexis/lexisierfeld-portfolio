@@ -21,7 +21,6 @@ export default function Blog() {
         From My Keyboard
       </motion.h1>
       <p className="text-center text-sm text-slate-300/80 mb-12">
-        Notes on code, curiosity, and everything in between.
       </p>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
@@ -30,7 +29,7 @@ export default function Blog() {
           <h2 className="text-xl font-semibold text-cyan-200 mb-2">
             The Strange Joy of Inspecting Random Websites
           </h2>
-          <p className="text-sm text-slate-300/80 mb-1">🗓️ June 22, 2025</p>
+          <p className="text-sm text-slate-300/80 mb-1">June 22, 2025</p>
           <p className="text-slate-200/90 mb-4">
             A small habit that makes me weirdly happy.
           </p>
@@ -47,12 +46,12 @@ export default function Blog() {
           <h2 className="text-xl font-semibold text-cyan-200 mb-2">
             Tabs as a Personality Test
           </h2>
-          <p className="text-sm text-slate-300/80 mb-1">🗓️ July 17, 2025</p>
+          <p className="text-sm text-slate-300/80 mb-1">July 17, 2025</p>
           <p className="text-slate-200/90 mb-4">
             Why I think our messy browsers say more about us than we realize.
           </p>
           <Link
-            href="/blog/tabs-as-a-personality-test"
+            href="/blog/first-post"
             className="inline-block text-sm px-4 py-2 rounded-lg border border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10 transition-colors"
           >
             Read Post
@@ -64,12 +63,12 @@ export default function Blog() {
           <h2 className="text-xl font-semibold text-cyan-200 mb-2">
             The Emotions of Money
           </h2>
-          <p className="text-sm text-slate-300/80 mb-1">🗓️ October 12, 2025</p>
+          <p className="text-sm text-slate-300/80 mb-1">October 12, 2025</p>
           <p className="text-slate-200/90 mb-4">
             How markets reflect our collective emotions more than our math.
           </p>
           <Link
-            href="/blog/the-emotions-of-money"
+            href="/blog/third-post"
             className="inline-block text-sm px-4 py-2 rounded-lg border border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10 transition-colors"
           >
             Read Post
