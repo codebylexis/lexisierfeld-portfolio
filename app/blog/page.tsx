@@ -6,63 +6,75 @@ import { motion } from 'framer-motion';
 export default function Blog() {
   return (
     <motion.main
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="min-h-screen bg-gradient-to-b from-[#0b0c1d] to-[#1a1b2f] text-white px-6 py-24 font-sans"
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="min-h-screen bg-gradient-to-b from-[#0b0c1d] to-[#0f1222] text-white px-6 py-24 font-sans"
     >
-      {/* ✨ Animated cosmic blobs */}
-      <div className="absolute top-16 left-12 w-24 h-24 bg-pink-400 rounded-full blur-2xl opacity-30 animate-ping" />
-      <div className="absolute bottom-24 right-10 w-20 h-20 bg-purple-500 rounded-full blur-2xl opacity-30 animate-pulse" />
-      <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-indigo-400 rounded-full blur-xl opacity-30 animate-pulse" />
-
-      {/* 🚀 Blog Title */}
+      {/* 🧭 Header */}
       <motion.h1
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
-  className="text-4xl md:text-5xl leading-tight font-extrabold text-center mb-12 bg-gradient-to-r from-pink-300 via-purple-400 to-indigo-400 text-transparent bg-clip-text"
->
-  From My Keyboard
-</motion.h1>
+        initial={{ opacity: 0, y: -12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl md:text-5xl leading-tight font-extrabold text-center mb-3"
+      >
+        From My Keyboard
+      </motion.h1>
+      <p className="text-center text-sm text-slate-300/80 mb-12">
+        Notes on code, curiosity, and everything in between.
+      </p>
 
-
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 relative z-10">
-
-
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
         {/* Blog Post: Inspecting Random Websites */}
-        <div className="bg-white/5 border border-pink-500/20 rounded-2xl p-6 hover:bg-white/10 transition">
-          <h2 className="text-xl font-semibold text-pink-200 mb-2">
+        <article className="rounded-2xl border border-slate-800/70 bg-white/[0.035] p-6 hover:bg-white/[0.055] hover:border-slate-700/60 transition-colors">
+          <h2 className="text-xl font-semibold text-cyan-200 mb-2">
             The Strange Joy of Inspecting Random Websites
           </h2>
-          <p className="text-sm text-purple-300 mb-1">🗓️ June 22, 2025</p>
-          <p className="text-gray-300 mb-4">
+          <p className="text-sm text-slate-300/80 mb-1">🗓️ June 22, 2025</p>
+          <p className="text-slate-200/90 mb-4">
             A small habit that makes me weirdly happy.
           </p>
           <Link
             href="/blog/second-post"
-            className="inline-block bg-pink-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-pink-600 transition"
+            className="inline-block text-sm px-4 py-2 rounded-lg border border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10 transition-colors"
           >
             Read Post
           </Link>
-        </div>
+        </article>
 
-        {/* Blog Post: No Slugs, No MDX */}
-        <div className="bg-white/5 border border-pink-500/20 rounded-2xl p-6 hover:bg-white/10 transition">
-          <h2 className="text-xl font-semibold text-pink-200 mb-2">
-            I Built My Blog Without Slugs, MDX, or Headaches
+        {/* Blog Post: Tabs as a Personality Test */}
+        <article className="rounded-2xl border border-slate-800/70 bg-white/[0.035] p-6 hover:bg-white/[0.055] hover:border-slate-700/60 transition-colors">
+          <h2 className="text-xl font-semibold text-cyan-200 mb-2">
+            Tabs as a Personality Test
           </h2>
-          <p className="text-sm text-purple-300 mb-1">🗓️ June 17, 2025</p>
-          <p className="text-gray-300 mb-4">
-            Simplifying my blog setup in Next.js 15 — no slugs, no MDX, just working.
+          <p className="text-sm text-slate-300/80 mb-1">🗓️ July 17, 2025</p>
+          <p className="text-slate-200/90 mb-4">
+            Why I think our messy browsers say more about us than we realize.
           </p>
           <Link
-            href="/blog/first-post"
-            className="inline-block bg-pink-500 text-white text-sm px-4 py-2 rounded-lg hover:bg-pink-600 transition"
+            href="/blog/tabs-as-a-personality-test"
+            className="inline-block text-sm px-4 py-2 rounded-lg border border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10 transition-colors"
           >
             Read Post
           </Link>
-        </div>
+        </article>
+
+        {/* Blog Post: The Emotions of Money */}
+        <article className="rounded-2xl border border-slate-800/70 bg-white/[0.035] p-6 hover:bg-white/[0.055] hover:border-slate-700/60 transition-colors">
+          <h2 className="text-xl font-semibold text-cyan-200 mb-2">
+            The Emotions of Money
+          </h2>
+          <p className="text-sm text-slate-300/80 mb-1">🗓️ October 12, 2025</p>
+          <p className="text-slate-200/90 mb-4">
+            How markets reflect our collective emotions more than our math.
+          </p>
+          <Link
+            href="/blog/the-emotions-of-money"
+            className="inline-block text-sm px-4 py-2 rounded-lg border border-cyan-400/40 text-cyan-200 hover:bg-cyan-400/10 transition-colors"
+          >
+            Read Post
+          </Link>
+        </article>
       </div>
     </motion.main>
   );

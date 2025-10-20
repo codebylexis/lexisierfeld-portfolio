@@ -42,33 +42,12 @@ const projects: Project[] = [
     link: 'https://github.com/codebylexis/ai-image-caption-generator',
   },
   {
-    title: 'Sprig: Toy Programming Language',
-    description:
-      'A simple interpreted language with a Python backend and a React frontend for visualizing abstract syntax trees (ASTs) in real-time.',
-    tech: ['Python', 'React', 'FastAPI', 'Framer Motion'],
-    link: 'https://github.com/codebylexis/Sprig',
-  },
-  {
     title: 'ReelTime Rentals – Analytics Dashboard',
     description:
       'A KPI dashboard for a fictional movie rental company using PostgreSQL, Streamlit, and Python to visualize performance in 2024.',
     tech: ['Python', 'PostgreSQL', 'Streamlit', 'Faker', 'Pandas'],
     link: 'https://github.com/codebylexis/movie_rental_dashboard',
     live: 'https://reeltime-rentals-2024-analytics.streamlit.app/',
-  },
-  {
-    title: 'Mini Unix Shell in C',
-    description:
-      'A basic Unix-like shell built from scratch in C with job control, piping, redirection, and signal handling.',
-    tech: ['C', 'POSIX', 'Readline', 'Signals', 'Linux'],
-    link: 'https://github.com/codebylexis/mini-shell',
-  },
-  {
-    title: 'Java Huffman File Compressor',
-    description:
-      'Command-line Java tool that compresses and decompresses files using Huffman encoding with real compression ratio tracking.',
-    tech: ['Java', 'VS Code', 'Java I/O'],
-    link: 'https://github.com/codebylexis/HuffmanCompressor',
   },
 ];
 
