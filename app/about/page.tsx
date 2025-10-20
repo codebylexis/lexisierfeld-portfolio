@@ -33,7 +33,7 @@ export default function About() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="max-w-3xl mx-auto bg-white/[0.06] border border-cyan-300/20 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative z-10"
       >
-        {/* New, concise technical bio */}
+        {/* Concise technical bio */}
         <div className="space-y-4 text-slate-200 leading-relaxed">
           <p>
             I’m a Math major and Computer Science minor at the University of Pennsylvania, where I
@@ -57,8 +57,11 @@ export default function About() {
           <p>Outside of work, I surf, write, and am a member of the Penn Cheerleading Team.</p>
         </div>
 
+        {/* subtle divider to calm the layout */}
+        <hr className="border-t border-cyan-300/10 my-10" />
+
         {/* 🧠 Skills (compact, not text-dense) */}
-        <div className="mt-10">
+        <div className="mt-14">
           <h2 className="text-2xl font-semibold text-cyan-200 mb-4">Skills</h2>
 
           {/* Category rows */}
@@ -69,7 +72,7 @@ export default function About() {
                 {['Python', 'Java', 'C', 'OCaml', 'JavaScript', 'SQL'].map((s) => (
                   <span
                     key={s}
-                    className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                    className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
                   >
                     {s}
                   </span>
@@ -95,7 +98,7 @@ export default function About() {
                 ].map((s) => (
                   <span
                     key={s}
-                    className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                    className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
                   >
                     {s}
                   </span>
@@ -110,7 +113,7 @@ export default function About() {
                   {['PostgreSQL'].map((s) => (
                     <span
                       key={s}
-                      className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
+                      className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
                     >
                       {s}
                     </span>
@@ -121,22 +124,16 @@ export default function About() {
               <div>
                 <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Tools & Tech</div>
                 <div className="flex flex-wrap gap-2">
-                  {[
-                    'Git',
-                    'VS Code',
-                    'Linux',
-                    'REST APIs',
-                    'Framer Motion',
-                    'Jupyter Notebook',
-                    'IntelliJ',
-                  ].map((s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1 rounded-full bg-white/[0.06] border border-cyan-300/20 text-sm"
-                    >
-                      {s}
-                    </span>
-                  ))}
+                  {['Git', 'VS Code', 'Linux', 'REST APIs', 'Framer Motion', 'Jupyter Notebook', 'IntelliJ'].map(
+                    (s) => (
+                      <span
+                        key={s}
+                        className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
+                      >
+                        {s}
+                      </span>
+                    )
+                  )}
                 </div>
               </div>
             </div>
@@ -169,13 +166,7 @@ export default function About() {
             viewport={{ once: true }}
             className="rounded-full overflow-hidden w-64 h-64 border-4 border-cyan-300/40 shadow-xl mx-auto hover:scale-105 transition-transform"
           >
-            <Image
-              src={img.src}
-              alt={img.alt}
-              width={400}
-              height={400}
-              className="object-cover w-full h-full"
-            />
+            <Image src={img.src} alt={img.alt} width={400} height={400} className="object-cover w-full h-full" />
           </motion.div>
         ))}
       </div>
