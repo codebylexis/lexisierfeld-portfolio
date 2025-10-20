@@ -3,6 +3,17 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
+function SkillPill({ label }: { label: string }) {
+  return (
+    <span
+      title={label}
+      className="inline-flex h-9 w-full items-center justify-center rounded-full border border-cyan-300/20 bg-white/[0.04] px-3 text-sm text-slate-200 leading-none whitespace-nowrap truncate"
+    >
+      {label}
+    </span>
+  );
+}
+
 export default function About() {
   return (
     <motion.main
@@ -57,32 +68,28 @@ export default function About() {
           <p>Outside of work, I surf, write, and am a member of the Penn Cheerleading Team.</p>
         </div>
 
-        {/* subtle divider to calm the layout */}
+        {/* subtle divider */}
         <hr className="border-t border-cyan-300/10 my-10" />
 
-        {/* 🧠 Skills (compact, not text-dense) */}
+        {/* 🧠 Skills (uniform grid) */}
         <div className="mt-14">
           <h2 className="text-2xl font-semibold text-cyan-200 mb-4">Skills</h2>
 
-          {/* Category rows */}
-          <div className="space-y-4 text-slate-300">
+          <div className="space-y-6 text-slate-300">
+            {/* Languages */}
             <div>
-              <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Languages</div>
-              <div className="flex flex-wrap gap-2">
+              <div className="text-sm uppercase tracking-wide text-slate-400 mb-2">Languages</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                 {['Python', 'Java', 'C', 'OCaml', 'JavaScript', 'SQL'].map((s) => (
-                  <span
-                    key={s}
-                    className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
-                  >
-                    {s}
-                  </span>
+                  <SkillPill key={s} label={s} />
                 ))}
               </div>
             </div>
 
+            {/* Frameworks & Libraries */}
             <div>
-              <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Frameworks & Libraries</div>
-              <div className="flex flex-wrap gap-2">
+              <div className="text-sm uppercase tracking-wide text-slate-400 mb-2">Frameworks & Libraries</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                 {[
                   'Flask',
                   'React',
@@ -96,44 +103,27 @@ export default function About() {
                   'Seaborn',
                   'Scikit-learn',
                 ].map((s) => (
-                  <span
-                    key={s}
-                    className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
-                  >
-                    {s}
-                  </span>
+                  <SkillPill key={s} label={s} />
                 ))}
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4">
+            {/* Databases & Tools */}
+            <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Databases</div>
-                <div className="flex flex-wrap gap-2">
+                <div className="text-sm uppercase tracking-wide text-slate-400 mb-2">Databases</div>
+                <div className="grid grid-cols-2 sm:grid-cols-2 gap-2">
                   {['PostgreSQL'].map((s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
-                    >
-                      {s}
-                    </span>
+                    <SkillPill key={s} label={s} />
                   ))}
                 </div>
               </div>
-
               <div>
-                <div className="text-sm uppercase tracking-wide text-slate-400 mb-1">Tools & Tech</div>
-                <div className="flex flex-wrap gap-2">
-                  {['Git', 'VS Code', 'Linux', 'REST APIs', 'Framer Motion', 'Jupyter Notebook', 'IntelliJ'].map(
-                    (s) => (
-                      <span
-                        key={s}
-                        className="px-3 py-1 rounded-full bg-white/[0.04] border border-cyan-300/20 text-sm"
-                      >
-                        {s}
-                      </span>
-                    )
-                  )}
+                <div className="text-sm uppercase tracking-wide text-slate-400 mb-2">Tools & Tech</div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {['Git', 'VS Code', 'Linux', 'REST APIs', 'Framer Motion', 'Jupyter Notebook', 'IntelliJ'].map((s) => (
+                    <SkillPill key={s} label={s} />
+                  ))}
                 </div>
               </div>
             </div>
